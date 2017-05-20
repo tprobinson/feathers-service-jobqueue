@@ -1,0 +1,70 @@
+{
+  "name": "feathers-service-jobqueue",
+  "version": "0.1.0",
+  "description": "A service to wrap around Kue and provide Feathers API.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tprobinson/feathers-service-jobqueue.git"
+  },
+  "keywords": [
+    "feathers",
+    "service",
+    "kue",
+    "jobs",
+    "worker",
+    "pool"
+  ],
+  "author": {
+    "name": "Trevor Robinson",
+    "url": "https://keybase.io/tpr"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/tprobinson/feathers-service-jobqueue/raw/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/tprobinson/feathers-service-jobqueue/issues"
+  },
+  "homepage": "https://github.com/tprobinson/feathers-service-jobqueue#readme",
+  "esdoc": {
+    "source": ".",
+    "destination": "./docs",
+    "unexportIdentifier": true,
+    "undocumentIdentifier": true,
+    "includes": [
+      "^lib/.+\\.js$"
+    ],
+    "experimentalProposal": {
+      "classProperties": true,
+      "objectRestSpread": true,
+      "decorators": true,
+      "doExpressions": true,
+      "functionBind": true,
+      "asyncGenerators": true,
+      "exportExtensions": true,
+      "dynamicImport": true
+    },
+    "plugins": []
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "debug": "^2.6.8",
+    "feathers-errors": "^2.8.0",
+    "kue": "^0.11.5",
+    "node-schedule": "^1.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "eslint": "^3.19.0",
+    "feathers": "^2.1.2",
+    "mocha": "^3.4.1"
+  }
+}
