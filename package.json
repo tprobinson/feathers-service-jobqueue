@@ -4,7 +4,8 @@
   "description": "A service to wrap around Kue and provide Feathers API.",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha ./test/test.js",
+    "bench": "babel-node ./test/bench.js"
   },
   "repository": {
     "type": "git",
@@ -60,11 +61,14 @@
     "node-schedule": "^1.2.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
     "chai": "^3.5.0",
-    "chai-as-promised": "^6.0.0",
+    "chai-as-promised": "^7.0.0",
     "eslint": "^3.19.0",
     "feathers": "^2.1.2",
-    "mocha": "^3.4.1"
+    "mocha": "^3.4.1",
+    "simple-benchmarkjs-runner": "^0.0.5"
   }
 }
