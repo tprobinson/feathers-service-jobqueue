@@ -120,6 +120,7 @@ describe('Job Attributes', function () {
 // that zones work, when they're implemented.
 // that data of all types is passed in and out of a job.
 // Needs some kind of throw... as a fail with a specific code and data type.
+// test find and get
 
 // TODO
 // Make redis come up when Mocha does.
